@@ -11,4 +11,6 @@ Scientific Computing with Python :bar_chart:
 
 ## Pictures
 * Anaconda   
-![Anaconda](http://ofr08plvj.bkt.clouddn.com/anaconda.PNG)
+![Anaconda](http://ofr08plvj.bkt.clouddn.com/anaconda.PNG)  
+* Mayavi  
+![Mayavi](http://ofr08plvj.bkt.clouddn.com/MayaviImg.png)
