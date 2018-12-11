@@ -12,6 +12,8 @@ and integrate systems more effectively
 
 # Python Tools
 
+[PyLab](https://sourceforge.net/projects/pylab/): a place to release tools that have not yet been added to **SciPy** (or will not be added for whatever reason). Currently an interface to **ImageMagick** is here.
+
 ## Install / Build
 
 ### pip
@@ -46,11 +48,17 @@ and integrate systems more effectively
 * [How to Think Like a Computer Scientist: Interactive Edition](http://interactivepython.org/runestone/static/thinkcspy/index.html)
 * [廖雪峰的Python教程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 * [Python基础教程（菜鸟教程）](http://www.runoob.com/python/python-tutorial.html)
+* [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/)
+* [Scipy Lecture Notes](http://www.scipy-lectures.org/): One document to learn numerics, science, and data with Python
 
 
 # Libraries/Packages
 
 * [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
+
+## NumPy
+
+[NumPy](http://www.numpy.org/) is the fundamental package for scientific computing with Python
 
 ## Matplotlib
 [Matplotlib](https://matplotlib.org/) is a **Python 2D plotting library** which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.
