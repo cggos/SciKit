@@ -1,16 +1,55 @@
 # Scientific Computing
 
-* *[Introduction to Scientific Programming: Computational Problem Solving Using Maple and C](https://www.cs.utah.edu/~zachary/IntroSciProg.html)*
+* [Wolfram](http://www.wolfram.com): Computation Meets Knowledge
+  - [Wolfram MathWorld](http://mathworld.wolfram.com): The Web's Most Extensive Mathematics Resource
+  - [Wolfram|Alpha](https://www.wolframalpha.com/): Computational Intelligence
+* [Mathematical software - swMATH](https://www.swmath.org/)
+
+* [Programs in Mathematics](https://www.mathprograms.org)
+* [Mathematical Programming Society](http://www.mathprog.org/)
+* [Math ∩ Programming](https://jeremykun.com/)
+
+* [S.O.S. MATHematics](http://www.sosmath.com) is your free resource for math review material from Algebra to Differential Equations!
+
+* [Computational Linear Algebra course](https://www.fast.ai/2017/07/17/num-lin-alg/)
+* [Numerical Recipes Home Page](http://numerical.recipes/)
+* [hongshin/DiscreteMath](https://github.com/hongshin/DiscreteMath)
 
 ------
+
+[TOC]
 
 ## Python
 
 ## Matlab
 
+* [MathWorks](https://www.mathworks.com)
+* [MATLAB技术论坛](http://www.matlabsky.com/)
+* [MATLAB中文论坛](https://www.ilovematlab.cn/forum.php)
+* [MATLAB中国论坛](http://www.labfans.com/bbs/)
+
+### GNU Octave
+
+* [GNU Octave](https://www.gnu.org/software/octave/): Scientific Programming Language
 * [OctaveOnline](https://octave-online.net/)
+
+## R
+
+* [The R Project for Statistical Computing](https://www.r-project.org/)
+* [Introduction to R](http://ramnathv.github.io/pycon2014-r/)
 
 ## Data Analysis
 
+* [QtiPlot](https://www.qtiplot.com/) is a cross platform data analysis and scientific visualisation solution
 * [OriginLab](https://www.originlab.com/) - Data Analysis and Graphing Software
 * [D3.js](https://d3js.org/) is a JavaScript library for manipulating documents based on data
+* [Circos](http://circos.ca/) is a software package for visualizing data and information
+
+### gnuplot
+
+* [gnuplot homepage](http://www.gnuplot.info/)
+* [gnuplot 让您的数据可视化](https://www.ibm.com/developerworks/cn/linux/l-gnuplot/)
+
+## Books
+
+* *[Introduction to Scientific Programming: Computational Problem Solving Using Maple and C](https://www.cs.utah.edu/~zachary/IntroSciProg.html)*
