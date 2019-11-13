@@ -22,6 +22,7 @@
 ## Online Tools
 
 * [云算网](http://www.yunsuan.info): 用云计算技术在线为您求解矩阵运算，数学规划，和数据挖掘领域内的一系列问题
+* [Online Matrix Calculator](http://www.bluebit.gr/matrix-calculator/)
 
 ## Python
 
