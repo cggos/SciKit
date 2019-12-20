@@ -57,10 +57,16 @@
 
 # Maths Topics
 
+* 偏导数、方向导数、梯度、微分
+
 ## Linear Algebra
 
 * [Computational Linear Algebra course](https://www.fast.ai/2017/07/17/num-lin-alg/)
 * [Numerical Recipes Home Page](http://numerical.recipes/)
+
+### Matrix Algebra
+
+* 正定、半正定、负定，解线性方程组
 
 ## Numerical Analysis
 
