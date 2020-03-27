@@ -48,17 +48,6 @@
 * [The R Project for Statistical Computing](https://www.r-project.org/)
 * [Introduction to R](http://ramnathv.github.io/pycon2014-r/)
 
-### Data Analysis
-
-* [QtiPlot](https://www.qtiplot.com/) is a cross platform data analysis and scientific visualisation solution
-* [OriginLab](https://www.originlab.com/) - Data Analysis and Graphing Software
-* [D3.js](https://d3js.org/) is a JavaScript library for manipulating documents based on data
-* [Circos](http://circos.ca/) is a software package for visualizing data and information
-
-#### gnuplot
-
-* [gnuplot homepage](http://www.gnuplot.info/)
-* [gnuplot 让您的数据可视化](https://www.ibm.com/developerworks/cn/linux/l-gnuplot/)
 
 # Maths Topics
 
