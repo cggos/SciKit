@@ -35,9 +35,9 @@ int main() {
     std::cout << "A = \n" << A << std ::endl;
 
     // set ordering methods
-    AMDOrdering<double> ordering;
-    PermutationMatrix<Dynamic, Dynamic, double> perm;
-    ordering(A, perm); // call AMD
+    // AMDOrdering<double> ordering;
+    // PermutationMatrix<Dynamic, Dynamic, double> perm;
+    // ordering(A, perm); // call AMD
 
     SparseQR<SparseMatrix<double>, AMDOrdering<int>> qr;
     qr.compute(A);
@@ -52,7 +52,7 @@ int main() {
 
     SPQR<SparseMatrix<double>> spqr;
     spqr.compute(A);
-
+    
     // 求 Ax = b
     Vector4d b(1, 2, 3, 4);
     Vector4d x = spqr.solve(b);
@@ -60,6 +60,23 @@ int main() {
     std::cout << "Ax = " << (A*x).transpose() << std::endl;
 
     std::cout << std::endl;
+
+    Matrix4d B1;
+    B1 << 1, 2, 3, 0,
+          8, 6, 0, 4,
+          0, 0, 9, 7,
+          5, 3, 0, 0;
+    
+    SparseMatrix<double> B = B1.sparseView();
+
+    SPQR<SparseMatrix<double>> spqrhelper;
+    spqrhelper.setSPQROrdering(SPQR_ORDERING_NATURAL);
+    spqrhelper.compute(B);
+
+    Matrix4d B2;
+    // (spqrhelper.matrixQ().transpose() * B1).evalTo(B2);
+    B2 = (spqrhelper.matrixQ().transpose() * B1);
+    std::cout << "B2:\n" << B2 << std::endl;
 
     return 0;
 }
