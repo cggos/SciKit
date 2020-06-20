@@ -1,6 +1,6 @@
 # Mathematics & Scientific Computing
 
-* https://cggos.github.io/categories.html#Math
+* https://cggos.github.io/categories.html#Maths
 
 ------
 

@@ -38,6 +38,8 @@ endif()
 #     link_libraries(${OpenCV_LIBS})
 # endif()
 
+add_executable(eigen_matrix eigen_matrix.cpp)
+
 add_executable(eigen_simd_test eigen_simd_test.cpp)
 
 add_executable(eigen_matrix_mul eigen_matrix_mul.cpp)
