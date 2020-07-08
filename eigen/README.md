@@ -16,13 +16,17 @@ EIGEN_VECTORIZE_NEON
 
 ## 内存分配
 
-### 静态分配内存
+### 静态 内存分配
 
 ```cpp
 Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor, 16, 1000> A400; // 静态分配内存
 ```
 
-### 动态内存分配
+### 动态 内存分配
+
+```cpp
+Eigen::MatrixXd A;
+```
 
 
 ## 字节对齐
@@ -45,7 +49,9 @@ Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor, 16, 1000>
 * NEON 
 
 
-## Expression Lazy Evaluation
+## Lazy Evaluation and Aliasing
+
+* https://eigen.tuxfamily.org/dox/TopicLazyEvaluation.html
 
 ```cpp
 eval()
