@@ -34,15 +34,102 @@ void matrix_mul(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B, Eigen::Matri
     for (int i = 0; i < C.rows(); i++) for (int j = 0; j < C.cols(); j++) C(i, j) = A.row(i) * B.col(j);
 }
 
-void matrix_mul(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B, const Eigen::MatrixXd &C, Eigen::MatrixXd &D) {
+void matrix_mul_col(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B, Eigen::MatrixXd &C) {
+    C = Eigen::MatrixXd::Zero(A.rows(), B.cols());
+    for (int i = 0; i < C.cols(); i++) C.col(i) = A * B.col(i);
+}
+
+void matrix_mul_col(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B, const Eigen::MatrixXd &C, Eigen::MatrixXd &D) {
     D = Eigen::MatrixXd::Zero(A.rows(), C.cols());
     Eigen::MatrixXd AB = Eigen::MatrixXd::Zero(A.rows(), B.cols());
     for (int i = 0; i < AB.cols(); i++) AB.col(i) = A * B.col(i);
     for (int i = 0; i < D.cols(); i++) D.col(i) = AB * C.col(i);
 }
 
-int main() {
+/**
+ * @brief [2x2] [2x2]
+ * 
+ * @param A 
+ * @param B 
+ * @return Eigen::MatrixXd 
+ */
+inline Eigen::MatrixXd mat_mul_abcd(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B) {
+    assert(!(A.isZero(0.0)) && !(B.isZero(0.0)) && A.cols() == B.rows());
 
+    MatrixXd C = MatrixXd::Zero(A.rows(), B.cols());
+
+    if (A.rows() < 2 || A.cols() < 2) return C = A * B;
+
+    int nar1 = A.rows() * 0.5;
+    int nar2 = A.rows() - nar1;
+    int nac1 = A.cols() * 0.5;
+    int nac2 = A.cols() - nac1;
+    MatrixXd Aa = A.topLeftCorner(nar1, nac1);
+    MatrixXd Ab = A.topRightCorner(nar1, nac2);
+    MatrixXd Ac = A.bottomLeftCorner(nar2, nac1);
+    MatrixXd Ad = A.bottomRightCorner(nar2, nac2);
+
+    int nbr1 = B.rows() * 0.5;
+    int nbr2 = B.rows() - nbr1;
+    int nbc1 = B.cols() * 0.5;
+    int nbc2 = B.cols() - nbc1;
+    MatrixXd Ba = B.topLeftCorner(nbr1, nbc1);
+    MatrixXd Bb = B.topRightCorner(nbr1, nbc2);
+    MatrixXd Bc = B.bottomLeftCorner(nbr2, nbc1);
+    MatrixXd Bd = B.bottomRightCorner(nbr2, nbc2);
+
+    C.topLeftCorner(nar1, nbc1) = Aa * Ba + Ab * Bc;
+    C.topRightCorner(nar1, nbc2) = Aa * Bb + Ab * Bd;
+    C.bottomLeftCorner(nar2, nbc1) = Ac * Ba + Ad * Bc;
+    C.bottomRightCorner(nar2, nbc2) = Ac * Bb + Ad * Bd;
+
+    return C;
+}
+
+inline Eigen::MatrixXd mat_mul_dyn(const Eigen::MatrixXd &A, const Eigen::MatrixXd &B, int block_dim = 50) {
+    assert(!(A.isZero(0.0)) && !(B.isZero(0.0)) && A.cols() == B.rows());
+
+    MatrixXd C = MatrixXd::Zero(A.rows(), B.cols());
+
+    if (A.rows() < 2 || A.cols() < 2) return C = A * B;
+
+    const int BDIM = block_dim;
+    const int BTHR = BDIM / 5;
+
+    int nha = A.rows() / BDIM;
+    int nab = A.cols() / BDIM;
+    int nwb = B.cols() / BDIM;
+
+    int lha = A.rows() % BDIM;
+    int lab = A.cols() % BDIM;
+    int lwb = B.cols() % BDIM;
+
+    if (lha < BTHR && nha != 0) lha += BDIM; else nha += 1;
+    if (lab < BTHR && nab != 0) lab += BDIM; else nab += 1;
+    if (lwb < BTHR && nwb != 0) lwb += BDIM; else nwb += 1;
+
+    MatrixXd matij = MatrixXd::Zero(BDIM, BDIM);
+    for (int i = 0; i < nha; i++) {
+        int idx_i = i * BDIM;
+        int dim_i = (i == nha - 1) ? lha : BDIM;
+        for (int j = 0; j < nwb; j++) {
+            int idx_j = j * BDIM;
+            int dim_j = (j == nwb - 1) ? lwb : BDIM;
+            if(dim_i != matij.rows() || dim_j!=matij.cols()) matij.resize(dim_i, dim_j);
+            matij.setZero();
+            for (int k = 0; k < nab; k++) {
+                int idx_k = k * BDIM;
+                int dim_k = (k == nab - 1) ? lab : BDIM;
+                matij.noalias() += A.block(idx_i, idx_k, dim_i, dim_k) * B.block(idx_k, idx_j, dim_k, dim_j);
+            }
+            C.block(idx_i, idx_j, dim_i, dim_j) = matij;
+        }
+    }
+
+    return C;
+}
+
+int main() {
 #if (defined __ARM_NEON) || (defined __ARM_NEON__)
     printf("ARM_NEON detected\n");
 #else
@@ -71,7 +158,7 @@ int main() {
     printf("Eigen::nbThreads(): %d\n", Eigen::nbThreads());
     printf("EIGEN_MAX_ALIGN_BYTES: %d\n", EIGEN_MAX_ALIGN_BYTES);
     printf("EIGEN_MAX_STATIC_ALIGN_BYTES: %d\n", EIGEN_MAX_STATIC_ALIGN_BYTES);
-    printf("EIGEN_STACK_ALLOCATION_LIMIT: %dKB\n", EIGEN_STACK_ALLOCATION_LIMIT / 1024); // 128KB
+    printf("EIGEN_STACK_ALLOCATION_LIMIT: %dKB\n", EIGEN_STACK_ALLOCATION_LIMIT / 1024);  // 128KB
     std::cout << "===================================================" << std::endl;
 
     // srand((unsigned)time(NULL));
@@ -114,7 +201,7 @@ int main() {
     printf("[cggos time] t_014: %fms\n", t_014.toc());
 
     TicToc t_015;
-    matrix_mul(A1, B1, C1, D1);
+    matrix_mul_col(A1, B1, C1, D1);
     printf("[cggos time] t_015: %fms\n", t_015.toc());
 
     TicToc t_016;
@@ -172,8 +259,16 @@ int main() {
     Eigen::Matrix<double, 80, 80> tmp = Eigen::Matrix<double, 80, 80>::Identity();
     Eigen::MatrixXd At = tmp * A40;
 
-    Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor, 16, 1000> A400; // 静态分配内存
+    Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::ColMajor, 16, 1000> A400;  // 静态分配内存
     // A400 = A40;
+
+    std::cout << "===================================================" << std::endl;
+
+    Eigen::MatrixXd C50 = A1 * B1;
+    Eigen::MatrixXd C51 = mat_mul_abcd(A1, B1);
+    Eigen::MatrixXd C52 = mat_mul_dyn(A1, B1);
+    std::cout << "C51-C50 norm: " << (C51-C50).norm() << std::endl;
+    std::cout << "C52-C50 norm: " << (C52-C50).norm() << std::endl;
 
     return 0;
 }
