@@ -45,9 +45,6 @@
 
 ### R
 
-* [The R Project for Statistical Computing](https://www.r-project.org/)
-* [Introduction to R](http://ramnathv.github.io/pycon2014-r/)
-
 
 # Maths Topics
 
