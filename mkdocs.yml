@@ -1,0 +1,26 @@
+site_name: Mathematics & Scientific Computing
+
+theme: readthedocs
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 5
+        separator: "_"
+
+nav:
+    - Maths Basics:
+      - Overview: math_basics/README.md
+
+    - C++:
+      - Eigen: cpp/eigen.md
+      - C++ Maths Libs: cpp/math_libs.md
+
+    - Python:
+      - Overview: python/README.md
+
+    - Matlab:
+      - Overview: matlab/README.md
+
+    - R:
+      - Overview: r/README.md

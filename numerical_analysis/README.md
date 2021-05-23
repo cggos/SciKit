@@ -1,5 +1,0 @@
-## Numerical Analysis
-
------
-
-### B-Splines
