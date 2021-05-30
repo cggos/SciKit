@@ -31,15 +31,46 @@
 
 * JetBrain PyCharm
 
-* [Anaconda](https://www.anaconda.com/): The Most Popular Python Data Science Platform
-  - [Anaconda多环境多版本python配置指导](http://www.cnblogs.com/harvey888/p/5465452.html)
-  - [Anaconda使用总结](https://www.jianshu.com/p/2f3be7781451)
-
 * [Python(x,y)](http://python-xy.github.io/)
 
 * [PyDev](http://www.pydev.org/) is a Python IDE for Eclipse, which may be used in Python, Jython and IronPython development
 
-## Python Version Manager
+### Anaconda
+
+[Anaconda](https://www.anaconda.com/): The Most Popular Python Data Science Platform
+
+```sh
+conda --version
+
+# 添加Anaconda的TUNA镜像
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+# 设置搜索时显示通道地址
+conda config --set show_channel_urls yes
+
+conda update conda
+
+conda update python
+
+conda info --envs
+# or
+conda env list
+
+# 切换虚拟环境
+conda activate <env-name>
+
+# 安装scipy
+conda install [-n env-name -c channel-name] scipy
+
+# 查找package信息
+conda search numpy
+
+# jupyter
+conda install [-n env-name] ipykernel
+python -m ipykernel install --name <env-name>
+```
+
+## Python Env Manager
 
 [PYTHON: PYENV, PYVENV, VIRTUALENV – WHAT’S THE DIFFERENCE?](http://masnun.com/2016/04/10/python-pyenv-pyvenv-virtualenv-whats-the-difference.html)
 
