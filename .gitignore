@@ -92,3 +92,5 @@ ENV/
 
 .tags
 a.out
+
+*.out
