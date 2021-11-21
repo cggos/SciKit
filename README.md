@@ -1,6 +1,6 @@
 # Mathematics & Scientific Computing
 
-[![Documentation Status](https://readthedocs.org/projects/sci-cmp/badge/?version=latest)](https://sci-cmp.readthedocs.io/zh_CN/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/scikit/badge/?version=latest)](https://scikit.readthedocs.io/en/latest/?badge=latest)
 
 
 -----
