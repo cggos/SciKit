@@ -14,7 +14,6 @@
   ```
 
 * 配置 国内源
-
   ```ini title="~/.pip/pip.conf"
   [global]
   trusted-host =  pypi.douban.com
