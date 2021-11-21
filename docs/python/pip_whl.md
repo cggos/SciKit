@@ -23,6 +23,8 @@
 * install
   ```sh
   pip install -i https://pypi.tuna.tsinghua.edu.cn/simple <package-name>
+
+  pip install -r requirements.txt
   ```
 
 ## wheel
