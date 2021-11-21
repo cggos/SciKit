@@ -8,9 +8,10 @@
 
 ---
 
-[TOC]
-
-## pip
+* install pip
+  ```sh
+  python get-pip.py
+  ```
 
 * 配置 国内源
 
@@ -20,12 +21,25 @@
   index-url = http://pypi.douban.com/simple
   ```
 
-* install
+* check
   ```sh
-  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple <package-name>
+  python -m pip list
 
-  pip install -r requirements.txt
+  python -m pip show sphinx
+
+  python -m pip search "query"
   ```
 
-## wheel
+* install & uninstall
+  ```sh
+  python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple <package-name>
 
+  python -m pip install -r requirements.txt
+
+  python -m pip uninstall SomePackage
+  ```
+
+* installing from Wheels
+  ```sh
+  python -m pip install SomePackage-1.0-py2.py3-none-any.whl
+  ```
