@@ -16,16 +16,6 @@
 
 [PyLab](https://sourceforge.net/projects/pylab/): a place to release tools that have not yet been added to **SciPy** (or will not be added for whatever reason). Currently an interface to **ImageMagick** is here.
 
-## Install / Build
-
-### pip
-
-[pip](https://pip.pypa.io/en/stable/): The PyPA recommended tool for installing Python packages
-
-### wheel
-
-[wheel](https://wheel.readthedocs.io/en/latest/) is the reference implementation of the Python wheel packaging standard
-* [Python Wheels](https://pythonwheels.com/)
 
 ## Python IDE
 
@@ -34,41 +24,6 @@
 * [Python(x,y)](http://python-xy.github.io/)
 
 * [PyDev](http://www.pydev.org/) is a Python IDE for Eclipse, which may be used in Python, Jython and IronPython development
-
-### Anaconda
-
-[Anaconda](https://www.anaconda.com/): The Most Popular Python Data Science Platform
-
-```sh
-conda --version
-
-# 添加Anaconda的TUNA镜像
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-
-# 设置搜索时显示通道地址
-conda config --set show_channel_urls yes
-
-conda update conda
-
-conda update python
-
-conda info --envs
-# or
-conda env list
-
-# 切换虚拟环境
-conda activate <env-name>
-
-# 安装scipy
-conda install [-n env-name -c channel-name] scipy
-
-# 查找package信息
-conda search numpy
-
-# jupyter
-conda install [-n env-name] ipykernel
-python -m ipykernel install --name <env-name>
-```
 
 ## Python Env Manager
 
@@ -79,6 +34,7 @@ python -m ipykernel install --name <env-name>
 * [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.
 
 * [pyenv](https://github.com/pyenv/pyenv) lets you easily switch between multiple versions of Python
+
 
 # Tutorials
 
@@ -103,45 +59,7 @@ python -m ipykernel install --name <env-name>
 * [Scipy Lecture Notes](http://www.scipy-lectures.org/): One document to learn numerics, science, and data with Python
 
 
-# Libraries/Packages
-
-* [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
-
-## NumPy
-
-[NumPy](http://www.numpy.org/) is the fundamental package for scientific computing with Python
-
-## Matplotlib
-
-[Matplotlib](https://matplotlib.org/) is a **Python 2D plotting library** which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.
-
-* [Matplotlib - 2D and 3D Plotting in IPython](http://jeffskinnerbox.me/notebooks/matplotlib-2d-and-3d-plotting-in-ipython.html)
-
-* [Matplotlib tutorial](https://www.labri.fr/perso/nrougier/teaching/matplotlib/)
-
-## pandas: Python Data Analysis Library
-
-[pandas](https://pandas.pydata.org/) is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
-
-## seaborn: statistical data visualization
-
-[Seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib
-
-## Bokeh
-
-[Bokeh](https://bokeh.pydata.org/en/latest/) is an interactive visualization library that targets modern web browsers for presentation
-
-## CuPy
-
-[CuPy](https://cupy.chainer.org/) is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture.
-
 # Python-Based
-
-## SciPy
-
-[SciPy](https://scipy.org/) (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
-
-* [SciPy Cookbook](https://scipy-cookbook.readthedocs.io/)
 
 ## IronPython
 
