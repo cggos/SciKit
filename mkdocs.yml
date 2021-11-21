@@ -1,26 +1,62 @@
-site_name: Mathematics & Scientific Computing
+site_name: sci_cmp
 
-theme: readthedocs
+site_description: Mathematics & Scientific Computing
+
+theme: 
+  name: material # readthedocs material
+  nav_style: light
 
 markdown_extensions:
-    - toc:
-        permalink: "#"
-        baselevel: 5
-        separator: "_"
+  - toc:
+      permalink: true # "#"
+      baselevel: 5
+      separator: "_"
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
+  - pymdownx.tilde        
+
+plugins:
+  - search
 
 nav:
-    - Maths Basics:
-      - Overview: math_basics/README.md
+  - Home: index.md
+  - Maths Basics:
+    - Overview: math_basics/README.md
 
-    - C++:
-      - Eigen: cpp/eigen.md
-      - C++ Maths Libs: cpp/math_libs.md
+  - C++:
+    - Eigen: cpp/eigen.md
+    - C++ Maths Libs: cpp/math_libs.md
 
-    - Python:
-      - Overview: python/README.md
+  - Python:
+    - Overview: python/README.md
+    - Anaconda: python/anaconda.md
+    - pip & wheel: python/pip_whl.md
+    - jupyter: python/jupyter.md
+    - Py Libs: python/py_libs.md
 
-    - Matlab:
-      - Overview: matlab/README.md
+  - Matlab:
+    - Overview: matlab/README.md
 
-    - R:
-      - Overview: r/README.md
+  - R:
+    - Overview: r/README.md
