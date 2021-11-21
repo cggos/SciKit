@@ -4,8 +4,6 @@
 
 ---
 
-[TOC]
-
 ## NumPy
 
 [NumPy](http://www.numpy.org/) is the fundamental package for scientific computing with Python

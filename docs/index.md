@@ -4,8 +4,6 @@
 
 ------
 
-[TOC]
-
 ## Overview
 
 * [Mathematics (Wikipedia)](https://en.wikipedia.org/wiki/Mathematics)

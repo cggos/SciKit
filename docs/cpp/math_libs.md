@@ -11,8 +11,6 @@ Mathematical libraries used in development and those usages with CMake.
 
 -----
 
-[TOC]
-
 ## Basic Linear Algebra
 
 * [Boosting numpy: Why BLAS Matters](https://markus-beuckelmann.de/blog/boosting-numpy-blas.html)
