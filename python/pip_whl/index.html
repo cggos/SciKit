@@ -398,26 +398,6 @@
     pip &amp; wheel
   </a>
   
-    <nav class="md-nav" aria-label="pip &amp; wheel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pip" class="md-nav__link">
-    pip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wheel" class="md-nav__link">
-    wheel
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -589,26 +569,6 @@
     pip &amp; wheel
   </a>
   
-    <nav class="md-nav" aria-label="pip &amp; wheel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pip" class="md-nav__link">
-    pip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wheel" class="md-nav__link">
-    wheel
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -639,29 +599,45 @@
 </li>
 </ul>
 <hr />
-<div class="toc">
 <ul>
-<li><a href="#pip_wheel">pip &amp; wheel</a><ul>
-<li><a href="#pip">pip</a></li>
-<li><a href="#wheel">wheel</a></li>
-</ul>
+<li>
+<p>install pip
+  <div class="highlight"><pre><span></span><code>python get-pip.py
+</code></pre></div></p>
 </li>
-</ul>
-</div>
-<h6 id="pip">pip<a class="headerlink" href="#pip" title="Permanent link">&para;</a></h6>
-<ul>
-<li>配置 国内源</li>
+<li>
+<p>配置 国内源</p>
+</li>
 </ul>
 <div class="highlight"><span class="filename">~/.pip/pip.conf</span><pre><span></span><code><span class="k">[global]</span>
 <span class="na">trusted-host</span> <span class="o">=</span>  <span class="s">pypi.douban.com</span>
 <span class="na">index-url</span> <span class="o">=</span> <span class="s">http://pypi.douban.com/simple</span>
 </code></pre></div>
 <ul>
-<li>install
-  <div class="highlight"><pre><span></span><code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple &lt;package-name&gt;
-</code></pre></div></li>
+<li>
+<p>check
+  <div class="highlight"><pre><span></span><code>python -m pip list
+
+python -m pip show sphinx
+
+python -m pip search <span class="s2">&quot;query&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>install &amp; uninstall
+  <div class="highlight"><pre><span></span><code>python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple &lt;package-name&gt;
+
+python -m pip install -r requirements.txt
+
+python -m pip uninstall SomePackage
+</code></pre></div></p>
+</li>
+<li>
+<p>installing from Wheels
+  <div class="highlight"><pre><span></span><code>python -m pip install SomePackage-1.0-py2.py3-none-any.whl
+</code></pre></div></p>
+</li>
 </ul>
-<h6 id="wheel">wheel<a class="headerlink" href="#wheel" title="Permanent link">&para;</a></h6>
                 
               
               
