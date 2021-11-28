@@ -42,3 +42,15 @@
   ```sh
   python -m pip install SomePackage-1.0-py2.py3-none-any.whl
   ```
+
+* install requirements
+  ```sh
+  pip install pipreqs
+  pipreqs
+  sudo pip install -r requirements.txt
+  ```
+
+* export dependencies
+  ```sh
+  pip freeze requirements.txt
+  ```
