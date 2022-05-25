@@ -58,5 +58,4 @@ nav:
   - Matlab:
     - Overview: matlab/README.md
 
-  - R:
-    - Overview: r/README.md
+  - R: r/README.md
