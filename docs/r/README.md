@@ -41,9 +41,24 @@ sudo add-apt-repository ppa:marutter/c2d4u3.5
 sudo apt-get update
 ```
 
+# install on Ubuntu 18.04
+
+* install RStudio prerequisites
+  
+  ```sh
+  sudo apt update
+  sudo apt install r-base
+  ```
+
+* [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+
+  ```sh
+  sudo dpkg -i xxx.deb
+  ```
+
 # Proxy
 
-[https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy](https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy)
+[Configuring R to Use an HTTP or HTTPS Proxy](https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy)
 
 ```bash
 /usr/lib/R/etc/Renviron.site
