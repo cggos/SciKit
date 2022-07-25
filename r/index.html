@@ -463,6 +463,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#install_on_ubuntu_1804" class="md-nav__link">
+    install on Ubuntu 18.04
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#proxy" class="md-nav__link">
     Proxy
   </a>
@@ -510,6 +517,13 @@
         <li class="md-nav__item">
   <a href="#ubuntu_1604_r_36" class="md-nav__link">
     ubuntu 16.04 升级 R 3.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install_on_ubuntu_1804" class="md-nav__link">
+    install on Ubuntu 18.04
   </a>
   
 </li>
@@ -576,8 +590,20 @@ sudo apt-get install r-base r-base-dev
 sudo add-apt-repository ppa:marutter/c2d4u3.5
 sudo apt-get update
 </code></pre></div>
+<h5 id="install_on_ubuntu_1804">install on Ubuntu 18.04<a class="headerlink" href="#install_on_ubuntu_1804" title="Permanent link">&para;</a></h5>
+<ul>
+<li>install RStudio prerequisites</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo apt update
+sudo apt install r-base
+</code></pre></div>
+<ul>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Download RStudio</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo dpkg -i xxx.deb
+</code></pre></div>
 <h5 id="proxy">Proxy<a class="headerlink" href="#proxy" title="Permanent link">&para;</a></h5>
-<p><a href="https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy">https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy</a></p>
+<p><a href="https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy">Configuring R to Use an HTTP or HTTPS Proxy</a></p>
 <div class="highlight"><pre><span></span><code>/usr/lib/R/etc/Renviron.site
 
 <span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:58591
