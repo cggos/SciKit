@@ -6,8 +6,6 @@
 
 ---
 
-[TOC]
-
 ## conda 配置
 
 ```sh title="~/.condarc"

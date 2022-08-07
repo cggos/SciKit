@@ -1,10 +1,11 @@
+# R
 
 * [The R Project for Statistical Computing](https://www.r-project.org/)
 * [Introduction to R](http://ramnathv.github.io/pycon2014-r/)
 
 ---
 
-# Tips
+## Tips
 
 * plot
   ```R
@@ -22,7 +23,7 @@
   dev.off()
   ```
 
-# ubuntu 16.04 升级 R 3.6
+## ubuntu 16.04 升级 R 3.6
 
 ```bash
 sudo apt-add-repository -y "deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/"
@@ -41,22 +42,20 @@ sudo add-apt-repository ppa:marutter/c2d4u3.5
 sudo apt-get update
 ```
 
-# install on Ubuntu 18.04
+## install on Ubuntu 18.04
 
 * install RStudio prerequisites
-  
   ```sh
   sudo apt update
   sudo apt install r-base
   ```
 
 * [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download)
-
   ```sh
   sudo dpkg -i xxx.deb
   ```
 
-# Proxy
+## Proxy
 
 [Configuring R to Use an HTTP or HTTPS Proxy](https://support.rstudio.com/hc/en-us/articles/200488488-Configuring-R-to-Use-an-HTTP-or-HTTPS-Proxy)
 

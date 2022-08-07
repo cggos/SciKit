@@ -11,8 +11,8 @@
   ```
 
 * cv::cv2eigen
-  - 在 `#include <opencv2/core/eigen.hpp>` 之前必须先 `#include <Eigen/Core>`
-  - 经笔者实验，该转换存在矩阵精度损失的问题，具体是由于什么原因造成的，待查更新
+    - 在 `#include <opencv2/core/eigen.hpp>` 之前必须先 `#include <Eigen/Core>`
+    - 经笔者实验，该转换存在矩阵精度损失的问题，具体是由于什么原因造成的，待查更新
 
 ## 预定义宏
 

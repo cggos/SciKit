@@ -10,33 +10,7 @@
 
 ------
 
-[TOC]
-
-# Python Tools
-
-[PyLab](https://sourceforge.net/projects/pylab/): a place to release tools that have not yet been added to **SciPy** (or will not be added for whatever reason). Currently an interface to **ImageMagick** is here.
-
-
-## Python IDE
-
-* JetBrain PyCharm
-
-* [Python(x,y)](http://python-xy.github.io/)
-
-* [PyDev](http://www.pydev.org/) is a Python IDE for Eclipse, which may be used in Python, Jython and IronPython development
-
-## Python Env Manager
-
-[PYTHON: PYENV, PYVENV, VIRTUALENV – WHAT’S THE DIFFERENCE?](http://masnun.com/2016/04/10/python-pyenv-pyvenv-virtualenv-whats-the-difference.html)
-
-* [Virtualenv](https://virtualenv.pypa.io/en/stable/) is a tool to create isolated Python environments
-
-* [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.
-
-* [pyenv](https://github.com/pyenv/pyenv) lets you easily switch between multiple versions of Python
-
-
-# Tutorials
+## Tutorials
 
 * [Python Course](https://www.python-course.eu/)
 
@@ -59,24 +33,47 @@
 * [Scipy Lecture Notes](http://www.scipy-lectures.org/): One document to learn numerics, science, and data with Python
 
 
-# Python-Based
+## Python Tools
 
-## IronPython
+[PyLab](https://sourceforge.net/projects/pylab/): a place to release tools that have not yet been added to **SciPy** (or will not be added for whatever reason). Currently an interface to **ImageMagick** is here.
+
+### Python IDE
+
+* JetBrain PyCharm
+
+* [Python(x,y)](http://python-xy.github.io/)
+
+* [PyDev](http://www.pydev.org/) is a Python IDE for Eclipse, which may be used in Python, Jython and IronPython development
+
+### Python Env Manager
+
+[PYTHON: PYENV, PYVENV, VIRTUALENV – WHAT’S THE DIFFERENCE?](http://masnun.com/2016/04/10/python-pyenv-pyvenv-virtualenv-whats-the-difference.html)
+
+* [Virtualenv](https://virtualenv.pypa.io/en/stable/) is a tool to create isolated Python environments
+
+* [Pipenv](https://pipenv.readthedocs.io/en/latest/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world.
+
+* [pyenv](https://github.com/pyenv/pyenv) lets you easily switch between multiple versions of Python
+
+
+## Python-Based
+
+### IronPython
 
 [IronPython](http://ironpython.net/) is an open-source implementation of the Python programming language which is tightly integrated with the .NET Framework
 
-## wxPython
+### wxPython
 
 [wxPython](https://www.wxpython.org/) is the cross-platform GUI toolkit for the Python language
 
-## WinPython
+### WinPython
 
 [WinPython](http://winpython.github.io/) is a free open-source portable distribution of the Python programming language for Windows 7/8/10 and scientific and educational usage
 
 
-# Books
+## Books
 
 * *[Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)*
 
 * *Python Graphics: A Reference for Creating 2D and 3D Images*
-  - [Apress/python-graphics (code)](https://github.com/Apress/python-graphics)
+    - [Apress/python-graphics (code)](https://github.com/Apress/python-graphics)

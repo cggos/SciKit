@@ -1,6 +1,8 @@
 # Mathematics & Scientific Computing
 
-* https://cggos.github.io/archive.html?tag=Maths
+* Source Code: https://github.com/cggos/scikit
+
+* Blog (CGABC): https://cgabc.xyz/tags/Maths/
 
 ------
 
@@ -9,8 +11,8 @@
 * [Mathematics (Wikipedia)](https://en.wikipedia.org/wiki/Mathematics)
 
 * [Wolfram](http://www.wolfram.com): Computation Meets Knowledge
-  - [Wolfram MathWorld](http://mathworld.wolfram.com): The Web's Most Extensive Mathematics Resource
-  - [Wolfram|Alpha](https://www.wolframalpha.com/): Computational Intelligence
+    - [Wolfram MathWorld](http://mathworld.wolfram.com): The Web's Most Extensive Mathematics Resource
+    - [Wolfram|Alpha](https://www.wolframalpha.com/): Computational Intelligence
 
 * [S.O.S. MATHematics](http://www.sosmath.com) is your free resource for math review material from Algebra to Differential Equations!
 
@@ -36,8 +38,8 @@
 * [Math ∩ Programming](https://jeremykun.com/)
 
 * Jupyter Notebooks
-  - [Jupyter](https://jupyter.org/)
-  - [nbviewer](https://nbviewer.jupyter.org/): A simple way to share Jupyter Notebooks
+    - [Jupyter](https://jupyter.org/)
+    - [nbviewer](https://nbviewer.jupyter.org/): A simple way to share Jupyter Notebooks
 
 * [Google Colab](https://colab.research.google.com/)
 

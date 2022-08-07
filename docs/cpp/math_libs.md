@@ -6,7 +6,7 @@ Mathematical libraries used in development and those usages with CMake.
 * [Netlib](http://www.netlib.org/) Repository at UTK and ORNL
 * [CodeCogs](https://www.codecogs.com/): Open Source Scientific Library (C/C++, .NET, Excel)
 * [GSL](https://www.gnu.org/software/gsl/gsl.html) (GNU Scientific Library): a numerical library for C and C++ programmers
-  - [GSL Shell](https://savannah.nongnu.org/projects/gsl-shell/) offers an interactive command-line interface that gives access to GSL collection of mathematical functions
+    - [GSL Shell](https://savannah.nongnu.org/projects/gsl-shell/) offers an interactive command-line interface that gives access to GSL collection of mathematical functions
 * [C++11 Fixed Point Arithmetic Library](https://embeddedartistry.com/blog/2017/8/25/c11-fixed-point-arithemetic-library)
 
 -----
