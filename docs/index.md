@@ -12,6 +12,10 @@
 
 * [S.O.S. MATHematics](http://www.sosmath.com) is your free resource for math review material from Algebra to Differential Equations!
 
+* [UbuntuScience](https://help.ubuntu.com/community/UbuntuScience)
+
+* Floating Point Math: https://0.30000000000000004.com/
+
 <p align="center">
   <img src="images/maths_map.png" style="width:80%;"/>
 </p>
@@ -19,14 +23,6 @@
 <p align="center">
   <img src="images/maths_categories.jpg" style="width:80%;"/>
 </p>
-
-
-## Programming
-
-* [Mathematical software - swMATH](https://www.swmath.org/)
-* [Programs in Mathematics](https://www.mathprograms.org)
-* [Mathematical Programming Society](http://www.mathprog.org/)
-* [Math ∩ Programming](https://jeremykun.com/)
 
 
 ## Maths Topics
@@ -51,6 +47,19 @@
 
 * Optimization
     * [cggos/state_estimation](https://github.com/cggos/state_estimation)
+
+
+## Programming
+
+* [Mathematical software - swMATH](https://www.swmath.org/)
+* [Programs in Mathematics](https://www.mathprograms.org)
+* [Mathematical Programming Society](http://www.mathprog.org/)
+* [Math ∩ Programming](https://jeremykun.com/)
+
+
+## Tools
+
+* [Maxima](https://maxima.sourceforge.io/): A Computer Algebra System
 
 
 ## Books

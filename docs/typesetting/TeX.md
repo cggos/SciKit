@@ -1,21 +1,27 @@
 # TeX
 
 * [TeX Users Group (TUG)](http://www.tug.org/)
+
 * [The Com­pre­hen­sive TEX Archive Net­work (CTAN)](https://ctan.org/)
+
 * [LaTeX科技排版工作室](http://www.latexstudio.net/)
 
 * [LaTeX Community](https://latex.org/forum/)
+
+---
+
+## Tutorial
+
 * [LaTeX Tutorial](https://www.latex-tutorial.com)
 * [LaTex from WiKiBooks](https://en.wikibooks.org/wiki/LaTeX)
-* [LaTeX-materials](https://github.com/BIT-thesis/LaTeX-materials)
-* [mathtextutorial (forkosh)](http://www.forkosh.com/mathtextutorial.html): LaTeX Practice Box
 * [Overleaf LaTeX Documentation](https://www.overleaf.com/learn/latex/Main_Page)
+
+* [LaTeX 学习资料 （for BIT-Thesis）](https://github.com/BIT-thesis/LaTeX-materials)
 
 * LaTeX Algorithms
     - [LaTeX/Algorithms(wikibook)](https://en.wikibooks.org/wiki/LaTeX/Algorithms)
     - [How to write algorithm in Latex](http://shantoroy.com/latex/how-to-write-algorithm-in-latex/)
 
----
 
 ## TeX Editor
 
@@ -65,7 +71,9 @@
 * [北京理工大学硕士（博士）学位论文LaTeX模板](https://github.com/BIT-thesis/LaTeX-template)
 
 
-## TeX on ubuntu
+## Install
+
+### TeX on ubuntu
 
 * [Ubuntu下部署Latex编译环境](http://ptbsare.org/2014/05/12/ubuntu%E4%B8%8B%E9%83%A8%E7%BD%B2latex%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/#1_-从源里面安装)
 
@@ -98,7 +106,7 @@ sudo apt install latex-cjk-all
   ```
 
 
-## TeX with Make
+### TeX with Make
 
 example: [jlblancoc/tutorial-se3-manifold](https://github.com/jlblancoc/tutorial-se3-manifold)
 
@@ -138,28 +146,6 @@ out.pdf: in.tex
 clean:
 	latexmk -CA
 ```
-
-## TeX with Math Graphics
-
-* [jPicEdt](http://jpicedt.sourceforge.net/site/index.php)
-* [The Ipe extensible drawing editor](http://ipe.otfried.org/)
-* [MetaPost (TUG)](https://tug.org/metapost.html)
-
-### TikZ & PGF
-
-* [Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！](https://www.cnblogs.com/tsingke/p/6649800.html)
-
-* [TikZ and PGF](http://www.texample.net/tikz/) are TeX packages for creating graphics programmatically
-
-* [TikzEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code
-
-* [matlab2tikz/matlab2tikz](https://github.com/matlab2tikz/matlab2tikz): converts MATLAB®/Octave figures to TikZ/pgfplots figures for smooth integration into LaTeX
-
-* [tikz-bayesnet](https://github.com/jluttine/tikz-bayesnet): TikZ library for drawing Bayesian networks, graphical models and (directed) factor graphs in LaTeX.
-
-* with **Inkscape**
-    - [svg2tikz](https://github.com/kjellmf/svg2tikz): a set of tools for converting SVG graphics to TikZ/PGF code
-    - [TexText](https://textext.github.io/textext/): Re-editable LaTeX graphics for Inkscape
 
 
 ## Apps

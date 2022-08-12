@@ -6,6 +6,12 @@
 
 ## Online Tools
 
+### Google Diagrams (drawio)
+
+* https://www.diagrams.net/
+
+* [Use mathematical typesetting in diagrams](https://www.diagrams.net/doc/faq/math-typesetting)
+
 ### GeoGebra
 
 * [GeoGebra](https://www.geogebra.org/): free online math tools for graphing, geometry, 3D, and more
