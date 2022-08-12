@@ -1,6 +1,8 @@
 # Wolfram
 
-* https://www.wolfram.com/
+* [Wolfram](http://www.wolfram.com): Computation Meets Knowledge
+    - [Wolfram MathWorld](http://mathworld.wolfram.com): The Web's Most Extensive Mathematics Resource
+    - [Wolfram|Alpha](https://www.wolframalpha.com/): Computational Intelligence
 
 ---
 

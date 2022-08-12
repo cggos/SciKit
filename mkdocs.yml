@@ -111,3 +111,8 @@ nav:
   - Wolfram:
     - Overview: wolfram/README.md
     - Wolfram Mathematica: wolfram/wolfram_mathematica.md
+  
+  - Math Typesetting:
+    - Overview: typesetting/README.md
+    - Graphics: typesetting/Graphics.md
+    - TeX: typesetting/TeX.md
