@@ -107,3 +107,7 @@ nav:
     - Overview: matlab/README.md
 
   - R: r/README.md
+
+  - Wolfram:
+    - Overview: wolfram/README.md
+    - Wolfram Mathematica: wolfram/wolfram_mathematica.md

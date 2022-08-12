@@ -2,7 +2,7 @@
 
 * Source Code: https://github.com/cggos/scikit
 
-* Blog (CGABC): https://cgabc.xyz/tags/Maths/
+* Blog (CGABC): https://cgabc.xyz/categories/Maths/
 
 ------
 
