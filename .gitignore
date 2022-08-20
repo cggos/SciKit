@@ -96,3 +96,5 @@ a.out
 *.out
 
 site/
+
+.vscode/
