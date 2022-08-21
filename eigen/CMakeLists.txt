@@ -45,16 +45,17 @@ if(Eigen3_FOUND)
     include_directories(${EIGEN3_INCLUDE_DIR})
 endif()
 
-find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui)
+find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui imgcodecs)
 if(OpenCV_FOUND)
     include_directories(${OpenCV_INCLUDE_DIRS})
-    link_libraries(${OpenCV_LIBS})
 endif()
 
 add_executable(eigen_matrix eigen_matrix.cpp)
 
 add_executable(eigen_simd_test eigen_simd_test.cpp)
-
-add_executable(eigen_matrix_mul eigen_matrix_mul.cpp)
 # target_compile_options(eigen_simd_test PUBLIC "-S")
 
+add_executable(eigen_matrix_mul eigen_matrix_mul.cpp)
+target_link_libraries(eigen_matrix_mul ${OpenCV_LIBS})
+
+add_executable(givens_rotation givens_rotation.cpp)
