@@ -6,6 +6,8 @@
 
 ## Online Tools
 
+* [Viz.js](http://viz-js.com/): Graphviz in your browser
+
 ### Google Diagrams (drawio)
 
 * https://www.diagrams.net/
