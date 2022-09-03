@@ -100,7 +100,6 @@ nav:
     - Overview: python/README.md
     - Anaconda: python/anaconda.md
     - pip & Wheel: python/pip_whl.md
-    - Jupyter: python/jupyter.md
     - Libs: python/py_libs.md
 
   - Matlab:
@@ -115,4 +114,6 @@ nav:
   - Math Typesetting:
     - Overview: typesetting/README.md
     - Graphics: typesetting/Graphics.md
+    - Conda: typesetting/conda.md
+    - Jupyter: typesetting/jupyter.md
     - TeX: typesetting/TeX.md

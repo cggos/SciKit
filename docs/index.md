@@ -17,18 +17,18 @@
 * Floating Point Math: https://0.30000000000000004.com/
 
 <p align="center">
-  <img src="images/maths_map.png" style="width:80%;"/>
+  <img src="img/maths_map.png" style="width:80%;"/>
 </p>
 
 <p align="center">
-  <img src="images/maths_categories.jpg" style="width:80%;"/>
+  <img src="img/maths_categories.jpg" style="width:80%;"/>
 </p>
 
 
 ## Maths Topics
 
 <p align="center">
-  <img src="images/real_imaginary.jpeg" style="width:60%;"/>
+  <img src="img/real_imaginary.jpeg" style="width:60%;"/>
 </p>
 
 * Math Basics
@@ -46,7 +46,7 @@
 * Geometry
 
 * Optimization
-    * [cggos/state_estimation](https://github.com/cggos/state_estimation)
+    * [State Estimation (CGABC)](https://est.cgabc.xyz/)
 
 
 ## Programming
@@ -55,11 +55,6 @@
 * [Programs in Mathematics](https://www.mathprograms.org)
 * [Mathematical Programming Society](http://www.mathprog.org/)
 * [Math ∩ Programming](https://jeremykun.com/)
-
-
-## Tools
-
-* [Maxima](https://maxima.sourceforge.io/): A Computer Algebra System
 
 
 ## Books

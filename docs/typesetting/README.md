@@ -11,13 +11,6 @@
 * [Online Matrix Calculator](http://www.bluebit.gr/matrix-calculator/)
 
 
-## Jupyter Notebooks
-
-- [Jupyter](https://jupyter.org/)
-
-- [nbviewer](https://nbviewer.jupyter.org/): A simple way to share Jupyter Notebooks
-
-
 ## Google Colab
 
 * [Google Colab](https://colab.research.google.com/)
@@ -30,7 +23,7 @@
 - [Google Colab Free GPU Tutorial](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
 
 
-## math typesetting library for the web
+## for Web
 
 ### KaTeX
 
@@ -50,3 +43,8 @@
 * [How to use MathJax in Jekyll generated Github pages](http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/)
 
 * [Write LaTeX Equations in Jekyll Using MathJax & Kramdown](https://lyk6756.github.io/2016/11/25/write_latex_equations.html)
+
+
+## Others
+
+* [Maxima](https://maxima.sourceforge.io/): A Computer Algebra System
