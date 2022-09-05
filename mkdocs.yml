@@ -117,3 +117,6 @@ nav:
     - Conda: typesetting/conda.md
     - Jupyter: typesetting/jupyter.md
     - TeX: typesetting/TeX.md
+  
+  - Appendix:
+    - Overview: appendix/README.md
