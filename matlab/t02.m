@@ -5,7 +5,7 @@
 % subplot(2,2,3);stairs(x,y,'b');title('stairs(x,y,''b'')');axis([0, 7, 0 ,2]);
 % subplot(2,2,4);stem(x,y,'k');title('stem(x,y,''k'')');axis([0, 7, 0 ,2]);
 
-% %¼«×ø±ê·½³Ì
+% %æåæ ‡æ–¹ç¨‹
 % theta=0:0.01:2*pi;
 % rho=sin(3*theta).*cos(5*theta);
 % figure
@@ -38,7 +38,7 @@ plot3(x,y,z);
 xlabel('x-axis'),ylabel('y-axis'),zlabel('z-axis');
 title('plot3-1');grid;
 
-%ÈıÎ¬Í¼ĞÎ
+%ä¸‰ç»´å›¾å½¢
 t=0:pi/50:2*pi;
 x=8*cos(t);
 y=4*sqrt(2)*sin(t);
