@@ -837,6 +837,19 @@
     TeX on ubuntu
   </a>
   
+    <nav class="md-nav" aria-label="TeX on ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#TeX_Live_on_Ubuntu" class="md-nav__link">
+    TeX Live on Ubuntu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1031,6 +1044,19 @@
     TeX on ubuntu
   </a>
   
+    <nav class="md-nav" aria-label="TeX on ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#TeX_Live_on_Ubuntu" class="md-nav__link">
+    TeX Live on Ubuntu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1188,69 +1214,95 @@
 <h2 id="Install">Install<a class="headerlink" href="#Install" title="Permanent link">&para;</a></h2>
 <h3 id="TeX_on_ubuntu">TeX on ubuntu<a class="headerlink" href="#TeX_on_ubuntu" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="http://ptbsare.org/2014/05/12/ubuntu%E4%B8%8B%E9%83%A8%E7%BD%B2latex%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/#1_-从源里面安装">Ubuntu下部署Latex编译环境</a></li>
-</ul>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install texlive-full
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># optional</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 安装中文字体包，字体包中包含bsmi，bkai，gkai，gbsn四种中文字体</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># bsmi和bkai是Big5编码的宋体和楷体字；后两者gkai和gbsn分别处理简体中文楷体字和宋体字</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>sudo apt install latex-cjk-all
-</code></pre></div>
-<ul>
+<li>
+<p><a href="http://ptbsare.org/2014/05/12/ubuntu%E4%B8%8B%E9%83%A8%E7%BD%B2latex%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/#1_-从源里面安装">Ubuntu下部署Latex编译环境</a></p>
+</li>
 <li>
 <p>ubuntu 16.04下的latex的section没有编号的问题</p>
 <ul>
 <li>从 <a href="https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec">https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec</a> 下载解压到 <code>/usr/share/texlive/texmf-dist/tex/latex</code></li>
 </ul>
 </li>
+</ul>
+<h4 id="TeX_Live_on_Ubuntu">TeX Live on Ubuntu<a class="headerlink" href="#TeX_Live_on_Ubuntu" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>install with <code>apt-get</code>
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt install texlive-full
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># optional</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 安装中文字体包，字体包中包含bsmi，bkai，gkai，gbsn四种中文字体</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># bsmi和bkai是Big5编码的宋体和楷体字；后两者gkai和gbsn分别处理简体中文楷体字和宋体字</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>sudo apt install latex-cjk-all
+</code></pre></div></p>
+</li>
+<li>
+<p>install with iso file: <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/</a>
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo mount -o loop texlive.iso /mnt
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span> /mnt 
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo ./install-tl <span class="o">[</span>-gui<span class="o">]</span> <span class="c1"># gui: sudo apt-get install perl-tk</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo umount /mnt
+</code></pre></div></p>
+</li>
+<li>
+<p>config
+  <div class="highlight"><span class="filename">~/.bashrc</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span> <span class="nv">MANPATH</span><span class="o">=</span>/usr/local/texlive/2022/texmf-dist/doc/man:<span class="nv">$MANPATH</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">export</span> <span class="nv">INFOPATH</span><span class="o">=</span>/usr/local/texlive/2022/texmf-dist/doc/info:<span class="nv">$INFOPATH</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>/usr/local/texlive/2022/bin/x86_64-linux:<span class="nv">$PATH</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>test
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>tex -v
+</code></pre></div></p>
+</li>
 <li>
 <p>tlmgr
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo mktexlsr
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>tlmgr init-usertree
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>tlmgr update --list <span class="c1"># sudo apt install xzdec</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>tlmgr --gui <span class="c1"># sudo apt install perl-tk</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># 永久更改镜像源</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># 临时切换镜像源</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>tlmgr update --all --repository <span class="se">\</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo mktexlsr
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>tlmgr init-usertree
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>tlmgr update --list <span class="c1"># sudo apt install xzdec</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>tlmgr --gui <span class="c1"># sudo apt install perl-tk</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># 永久更改镜像源</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1"># 临时切换镜像源</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>tlmgr update --all --repository <span class="se">\</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
 </code></pre></div></p>
 </li>
 </ul>
 <h3 id="TeX_with_Make">TeX with Make<a class="headerlink" href="#TeX_with_Make" title="Permanent link">&para;</a></h3>
 <p>example: <a href="https://github.com/jlblancoc/tutorial-se3-manifold">jlblancoc/tutorial-se3-manifold</a></p>
 <p>Prerequisites in Ubuntu:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo apt install latexmk texlive texlive-science
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo apt install latexmk texlive texlive-science
 </code></pre></div>
 <p>Build PDF with:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>make
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>make
 </code></pre></div>
-<div class="highlight"><span class="filename">Makefile</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c"># From: http://tex.stackexchange.com/questions/40738/how-to-properly-make-a-latex-project</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c"># You want latexmk to *always* run, because make does not have all the info.</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">out</span>.<span class="n">pdf</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c"># First rule should always be the default &quot;all&quot; rule, so both &quot;make all&quot; and</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c"># &quot;make&quot; will invoke it.</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nf">all</span><span class="o">:</span> <span class="n">out</span>.<span class="n">pdf</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c"># MAIN LATEXMK RULE</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c"># -pdf tells latexmk to generate PDF directly (instead of DVI).</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c"># -pdflatex=&quot;&quot; tells latexmk to call a specific backend with specific options.</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c"># -use-make tells latexmk to call make for generating missing files.</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c"># -interactive=nonstopmode keeps the pdflatex backend from stopping at a</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c"># missing file reference and interactively asking you for an alternative.</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="nf">out.pdf</span><span class="o">:</span> <span class="n">in</span>.<span class="n">tex</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    latexmk -pdf -pdflatex<span class="o">=</span><span class="s2">&quot;pdflatex -interactive=nonstopmode&quot;</span> -bibtex -use-make <span class="k">in</span>.tex
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nf">clean</span><span class="o">:</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    latexmk -CA
+<div class="highlight"><span class="filename">Makefile</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c"># From: http://tex.stackexchange.com/questions/40738/how-to-properly-make-a-latex-project</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c"># You want latexmk to *always* run, because make does not have all the info.</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">out</span>.<span class="n">pdf</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c"># First rule should always be the default &quot;all&quot; rule, so both &quot;make all&quot; and</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c"># &quot;make&quot; will invoke it.</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nf">all</span><span class="o">:</span> <span class="n">out</span>.<span class="n">pdf</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c"># MAIN LATEXMK RULE</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="c"># -pdf tells latexmk to generate PDF directly (instead of DVI).</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="c"># -pdflatex=&quot;&quot; tells latexmk to call a specific backend with specific options.</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c"># -use-make tells latexmk to call make for generating missing files.</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c"># -interactive=nonstopmode keeps the pdflatex backend from stopping at a</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="c"># missing file reference and interactively asking you for an alternative.</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="nf">out.pdf</span><span class="o">:</span> <span class="n">in</span>.<span class="n">tex</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>    latexmk -pdf -pdflatex<span class="o">=</span><span class="s2">&quot;pdflatex -interactive=nonstopmode&quot;</span> -bibtex -use-make <span class="k">in</span>.tex
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="nf">clean</span><span class="o">:</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>    latexmk -CA
 </code></pre></div>
 <h2 id="Apps">Apps<a class="headerlink" href="#Apps" title="Permanent link">&para;</a></h2>
 <h3 id="Beamer_Slides_with_LaTeX">Beamer Slides with LaTeX<a class="headerlink" href="#Beamer_Slides_with_LaTeX" title="Permanent link">&para;</a></h3>
