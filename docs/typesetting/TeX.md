@@ -77,17 +77,41 @@
 
 * [Ubuntu下部署Latex编译环境](http://ptbsare.org/2014/05/12/ubuntu%E4%B8%8B%E9%83%A8%E7%BD%B2latex%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/#1_-从源里面安装)
 
-```sh
-sudo apt install texlive-full
-
-# optional
-# 安装中文字体包，字体包中包含bsmi，bkai，gkai，gbsn四种中文字体
-# bsmi和bkai是Big5编码的宋体和楷体字；后两者gkai和gbsn分别处理简体中文楷体字和宋体字
-sudo apt install latex-cjk-all
-```
 
 * ubuntu 16.04下的latex的section没有编号的问题
     - 从 https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec 下载解压到 `/usr/share/texlive/texmf-dist/tex/latex`
+
+#### TeX Live on Ubuntu
+
+* install with `apt-get`
+  ```sh
+  sudo apt install texlive-full
+  
+  # optional
+  # 安装中文字体包，字体包中包含bsmi，bkai，gkai，gbsn四种中文字体
+  # bsmi和bkai是Big5编码的宋体和楷体字；后两者gkai和gbsn分别处理简体中文楷体字和宋体字
+  sudo apt install latex-cjk-all
+  ```
+
+* install with iso file: https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/
+  ```sh
+  sudo mount -o loop texlive.iso /mnt
+  cd /mnt 
+  sudo ./install-tl [-gui] # gui: sudo apt-get install perl-tk
+  sudo umount /mnt
+  ```
+
+* config
+  ```sh title="~/.bashrc"
+  export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH
+  export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH
+  export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+  ```
+
+* test
+  ```sh
+  tex -v
+  ```
 
 * tlmgr
   ```sh
