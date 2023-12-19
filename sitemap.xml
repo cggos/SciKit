@@ -2,87 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sci.cgabc.xyz/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/appendix/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/cpp/eigen/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/cpp/math_libs/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/matlab/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/python/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/python/anaconda/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/python/pip_whl/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/python/py_libs/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/r/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/typesetting/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/typesetting/Graphics/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/typesetting/TeX/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/typesetting/conda/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/typesetting/jupyter/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/wolfram/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sci.cgabc.xyz/wolfram/wolfram_mathematica/</loc>
-         <lastmod>2022-10-29</lastmod>
+         <lastmod>2023-12-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
