@@ -3,8 +3,8 @@ site_author: Gavin Gao
 site_url: https://sci.cgabc.xyz/
 site_description: Mathematics & Scientific Computing
 
-repo_url: https://github.com/cggos/scikit
-repo_name: cggos/scikit
+repo_url: https://github.com/cggos/SciKit
+repo_name: cggos/SciKit
 
 theme: 
   name: material # readthedocs material
