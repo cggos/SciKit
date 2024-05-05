@@ -52,6 +52,8 @@ endif()
 
 add_executable(eigen_matrix eigen_matrix.cpp)
 
+add_executable(eigen_tensor eigen_tensor.cpp)
+
 add_executable(eigen_simd_test eigen_simd_test.cpp)
 # target_compile_options(eigen_simd_test PUBLIC "-S")
 
