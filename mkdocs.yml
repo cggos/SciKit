@@ -113,7 +113,6 @@ nav:
   
   - Math Typesetting:
     - Overview: typesetting/README.md
-    - Graphics: typesetting/Graphics.md
     - Conda: typesetting/conda.md
     - Jupyter: typesetting/jupyter.md
     - TeX: typesetting/TeX.md
